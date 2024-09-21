@@ -38,6 +38,9 @@ least
 [`MonadUnliftIO`](https://www.stackage.org/haddock/lts-22.34/unliftio-core-0.2.1.0/Control-Monad-IO-Unlift.html#t:MonadUnliftIO)
 (although we ought to justify this claim).
 
+Some useful notes on resource safety to draw on:
+<https://tech.fpcomplete.com/haskell/tutorial/exceptions/>
+
 ### What do other effect systems provide?
 
 | Effect system | Encapsulation | State | Exceptions | IO | Resource safety | Non-determinism |
