@@ -45,11 +45,11 @@ Some useful notes on resource safety to draw on:
 
 | Effect system | Encapsulation | State | Exceptions | IO | Resource safety | Non-determinism |
 |---|---|---|---|---|---|---|
-| Bluefin | ✓ | ✓ | ✓ | ✓  | ✓ | ✗ |
-| MTL | ✓  | ✓  | ✓  | ✓  | ?  | ✓ |
-| ST | ✓  | ✓  | ✗  | ✗  | ✗  | ✗ |
-| Polysemy | ✓  | ✓  | ✓  | ✓  | ?  | ✓ |
-| ReaderT IO | ✗  | ✓  | ✓  | ✓  | ✓  | ✗ |
+| Bluefin | ✓ | ✓ | ✓ | ✓ | ✓ | ✗ |
+| MTL | ✓ | ✓ | ✓ | ✓ | ? | ✓ |
+| ST | ✓ | ✓ | ✗ | ✗ | ✗ | ✗ |
+| Polysemy | ✓ | ✓ | ✓ | ✓ | ? | ✓ |
+| ReaderT IO | ✗ | ✓ | ✓ | ✓ | ✓ | ✗ |
 
 - Transformers, MTL, effectful, polysemy, freeer-effects.
    - Quite complicated
