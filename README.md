@@ -51,25 +51,25 @@ Some useful notes on resource safety to draw on:
 | Polysemy | ✓  | ✓  | ✓  | ✓  | ?  | ✓ |
 | ReaderT IO | ✗  | ✓  | ✓  | ✓  | ✓  | ✗ |
 
-   - Transformers, MTL, effectful, polysemy, freeer-effects.
-      - Quite complicated
-      - Can't do `MonadUnliftIO`
-      - ST monad
+- Transformers, MTL, effectful, polysemy, freeer-effects.
+   - Quite complicated
+   - Can't do `MonadUnliftIO`
+   - ST monad
 
-   - ST
-     - Explicit STRef
-     - No IO at all, nor exceptions
-     - Encapsulation!
+- ST
+  - Explicit STRef
+  - No IO at all, nor exceptions
+  - Encapsulation!
 
-   - ReaderT IO
-     - No encapsulation
-     - RIO library  MonadUnliftIO class
+- ReaderT IO
+  - No encapsulation
+  - RIO library  MonadUnliftIO class
 
-   - Bluefin
-     - state, exception, IO (the effects of GHC's IO monad)
-     - iterators
-     - not: non-determinism
-     - concurrency? In principle yes. That's an open question.
+- Bluefin
+  - state, exception, IO (the effects of GHC's IO monad)
+  - iterators
+  - not: non-determinism
+  - concurrency? In principle yes. That's an open question.
 
 Somewhere need to discuss delimited continuations.
 
