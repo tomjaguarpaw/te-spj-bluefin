@@ -24,6 +24,11 @@ flip evalStateT initialState ::
 "`initialState`".  The return value has type `ExceptT e Identity r`,
 from which we know that no state effects are externally visible.
 
+How does encapsulation work in Bluefin?  The article "[Plucking
+constraints in
+Bluefin](https://h2.jaguarpaw.co.uk/posts/bluefin-plucking-constraints/)"
+is a partial answer, and can be cribbed for the paper.
+
 ### Resource safety
 
 Resource safety means that scarce resources are guaranteed to be
