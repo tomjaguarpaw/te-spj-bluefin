@@ -249,7 +249,7 @@ a critical property of Bluefin's `Eff`, but it seems quite nice.
 
   linked to the Launchbury/Sabry paper
 
-  [First Class Dynamic Effect
+* [First Class Dynamic Effect
   Handlers](https://users.cs.northwestern.edu/~robby/icfp2018/icfpws18tyde/icfpws18tydemain-p6-p.pdf)
    &ndash; Leijen TyDe 18
 
