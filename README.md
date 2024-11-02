@@ -245,7 +245,7 @@ a critical property of Bluefin's `Eff`, but it seems quite nice.
 
   `blockST` and `importVar`
 
-* [Monadic regions](https://www.cs.cornell.edu/people/fluet/research/rgn-monad/SPACE04/space04.pdf)  &ndash; Fluet
+* [Monadic regions](https://www.cs.cornell.edu/people/fluet/research/rgn-monad/SPACE04/space04.pdf) &ndash; Fluet
 
   linked to the Launchbury/Sabry paper
 
