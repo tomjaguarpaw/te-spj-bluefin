@@ -253,6 +253,10 @@ a critical property of Bluefin's `Eff`, but it seems quite nice.
   Handlers](https://users.cs.northwestern.edu/~robby/icfp2018/icfpws18tyde/icfpws18tydemain-p6-p.pdf)
    &ndash; Leijen TyDe 18
 
+* [Lightweight monadic
+  regions](https://okmij.org/ftp/Computation/resource-aware-prog/region-io.pdf)
+  &ndash; Kiselyov and Snan
+
 ## How type variables relate to capabilities
 
 NB: type variables and capabilities are not in 1-1 correspondence; e.g.
