@@ -61,7 +61,7 @@ Some useful notes on resource safety to draw on:
   delimited continuations, but cannot mix them.  See, for example
   <https://github.com/sayo-hs/heftia/issues/14#issuecomment-2355403132>
 
-- Transformers, MTL, effectful, polysemy, freeer-effects.
+- Transformers, MTL, effectful, polysemy, freer-effects.
    - Quite complicated
    - Can't do `MonadUnliftIO`
    - ST monad
