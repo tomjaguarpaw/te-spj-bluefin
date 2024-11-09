@@ -1,0 +1,100 @@
+\documentclass[sigplan,screen]{acmart}
+
+\AtBeginDocument{%
+  \providecommand\BibTeX{{%
+    Bib\TeX}}}
+
+\setcopyright{acmlicensed}
+\copyrightyear{2025}
+\acmYear{2025}
+\acmDOI{XXXXXXX.XXXXXXX}
+
+\acmConference[Conference acronym 'XX]{Make sure to enter the correct
+  conference title from your rights confirmation email}{June 03--05,
+  2018}{Woodstock, NY}
+\acmISBN{978-1-4503-XXXX-X/18/06}
+
+
+\begin{document}
+
+\title{Bluefin: a novel effect system for Haskell}
+
+\author{Simon Peyton Jones}
+\affiliation{%
+  \institution{Epic Games}
+  \city{Cambridge}
+  \country{UK}
+}
+\email{spj@spjemail}
+
+\author{Tom Ellis}
+\affiliation{%
+  \institution{Groq, Inc.}
+  \city{Cambridge}
+  \country{UK}
+  }
+\email{tom@tomsemail}
+
+\begin{abstract}
+  Bluefin is a novel effect system for Haskell.  We motivate the
+  design and compare it to existing effect systems, explaining how it
+  differs and why.
+\end{abstract}
+
+\maketitle
+
+\section{Introduction}
+
+Bluefin is a novel effect system for Haskell
+
+\section{Bluefin}
+
+Desirable properties
+
+\begin{itemize}
+\item Encapsulation
+\item Resource safety
+\item State, exceptions and I/O
+\item Non-determinism (Bluefin doesn't have this one)
+\end{itemize}
+
+Let's motivate the design of Bluefin through a sequence of strawmen...
+
+\section{Comparison to other effect systems}
+
+\begin{itemize}
+\item Just IO, and/or ReaderT IO
+\item effectful
+\item polysemy
+\item transformers
+\item heftia-effects
+\end{itemize}
+
+See Table \ref{tab:comparison}.  Column key:
+
+\begin{itemize}
+\item S: state
+\item E: exceptions
+\item I: I/O
+\item NonDet: non-determinism
+\item Res: resource safety
+\item Enc: encapsulation
+\end{itemize}
+
+\begin{table}
+  \caption{Effect systems}
+  \label{tab:comparison}
+  \begin{tabular}{lcccccc}
+    \toprule
+    Effect system & S & E & I & NonDet & Res & Enc \\
+    \midrule
+    Bluefin & Y & Y & Y & N & Y & Y\\
+    Polysemy & Y & Y & Y & Y & N & Y\\
+    IO & Y & Y & Y & N & Y & N\\
+    ST & Y & N & N & N & ? & Y\\
+  \bottomrule
+\end{tabular}
+\end{table}
+
+\end{document}
+\endinput
