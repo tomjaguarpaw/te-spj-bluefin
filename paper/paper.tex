@@ -36,9 +36,13 @@
 \email{tom@tomsemail}
 
 \begin{abstract}
-  Bluefin is a novel effect system for Haskell.  We motivate the
-  design and compare it to existing effect systems, explaining how it
-  differs and why.
+  Bluefin is a novel effect system for Haskell.  It is based around
+  the monadic type \texttt{Eff}, which is a newtype around Haskell's
+  \texttt{IO} type.  Effects are accessed through value-level
+  capabilities, and an \texttt{ST}-like use of the type system ensures
+  that capabilities cannot escape their scope.  We motivate the design
+  and compare it to existing effect systems, explaining how it differs
+  and why.
 \end{abstract}
 
 \maketitle
