@@ -49,20 +49,27 @@
 
 \section{Introduction}
 
-Bluefin is a novel effect system for Haskell
+There are a number of desirable properties that an effect system might
+have.
+
+\subsection{Encapsulation}
+
+Encapsulation is the property than we can handle one of the effects
+used by an effectful operation, and the type of the result indicates
+that the effect is no longer externally visible.  For example,
+Haskell's \texttt{ST} encapsulates state references throught its
+function \texttt{runST :: (forall s. ST s a) -> a}.  The rank-2 type
+ensures that no state references leak into the result.
+
+\subsection{Resource safety}
+
+\subsection{State, exceptions and I/O}
+\subsection{Non-determinism}
 
 \section{Bluefin}
 
-Desirable properties
-
-\begin{itemize}
-\item Encapsulation
-\item Resource safety
-\item State, exceptions and I/O
-\item Non-determinism (Bluefin doesn't have this one)
-\end{itemize}
-
-Let's motivate the design of Bluefin through a sequence of strawmen...
+Bluefin is a novel effect system for Haskell.  Let's motivate the
+design of Bluefin through a sequence of strawmen...
 
 \section{Comparison to other effect systems}
 
